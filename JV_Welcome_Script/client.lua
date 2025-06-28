@@ -1,6 +1,8 @@
+require(config.lua)
+
 AddEventHandler('playerSpawned', function ()
     local name = GetPlayerName(PlayerId())
-    local servername = "Jvaeth's Development"
+    local servername = config.servername
 
     exports.chat:addMessage({
         color = { 255, 0 ,0},
